@@ -11,9 +11,35 @@
         <h1 class="text-5xl text-center font-semibold mt-4">A Demo Text Editor.</h1>
     </header>
     <main>
-
+        <section class="my-8 w-9/12 mx-auto bg-sky-300 p-8">
+            <div class="grid grid-cols-3 justify-between">
+                <div>
+                    <ul class="flex gap-2">
+                        <li><a href="#" class="font-bold hover:bg-blue-500 p-2 hover:text-white" id="bold">B</a></li>
+                        <li><a href="#" class="font-bold hover:bg-blue-500 hover:text-white p-2" id="italic">I</a></li>
+                        <li><a href="#" class="hover:bg-blue-500 hover:text-white p-2" id="underline"><i class="fa-solid fa-underline"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="flex gap-2">
+                        <li><a href="#" class="p-2 hover:bg-sky-400" id="left"><i class="fa-solid fa-align-left"></i></a></li>
+                        <li><a href="#" class="p-2 hover:bg-sky-400" id="center"><i class="fa-solid fa-align-center"></i></a></li>
+                        <li><a href="#" class="p-2 hover:bg-sky-400" id="right"><i class="fa-solid fa-align-right"></i></a></li>
+                        <li><a href="#" class="p-2 hover:bg-sky-400" id="justify"><i class="fa-solid fa-align-justify"></i></a></li>
+                    </ul>
+                </div>
+                <div class="flex gap-4">
+                    <input type="number" name="" id="size" class="w-12 border-2 rounded p-1 border-solid">
+                    <input type="color" name="" id="color">
+                </div>
+            </div>
+            <div>
+                <textarea name="" style="font-size: 16px;" id="textarea" class="w-full mt-8 rounded p-4" rows="10"></textarea>
+            </div>
+        </section>
     </main>
     
+    <script src="https://kit.fontawesome.com/51766868f9.js" crossorigin="anonymous"></script>
     <script src="js/editor.js"></script>
 </body>
 </html>
